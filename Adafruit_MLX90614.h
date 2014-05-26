@@ -14,6 +14,8 @@
 
   Written by Limor Fried/Ladyada for Adafruied in any redistribution
  ****************************************************/
+#ifndef Adafruit_MLX90614_h
+#define Adafruit_MLX90614_h
 
 #include "application.h"
 
@@ -68,4 +70,7 @@ class Adafruit_MLX90614  {
   uint16_t read16(uint8_t addr);
   void write16(uint8_t addr, uint16_t data);
 };
+
+#endif
+
 
