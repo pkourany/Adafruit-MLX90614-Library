@@ -15,14 +15,18 @@
   Written by Limor Fried/Ladyada for Adafruied in any redistribution
  ****************************************************/
 
+#include "application.h"
 
+#ifdef SPARK_CORE
+// Spark - nothing to include
+#else
 #if (ARDUINO >= 100)
  #include "Arduino.h"
 #else
  #include "WProgram.h"
 #endif
 #include "Wire.h"
-
+#endif
 
 #define MLX90614_I2CADDR 0x5A
 
