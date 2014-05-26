@@ -1,5 +1,7 @@
 This is a library for the MLX90614 temperature sensor
 
+***  ADAPTED FOR SPARK CORE BY PAUL KOURANY, MAY 2014  ***
+
   Designed specifically to work with the MLX90614 sensors in the
   adafruit shop
   ----> https://www.adafruit.com/products/1748
