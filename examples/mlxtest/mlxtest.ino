@@ -16,8 +16,12 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-//#include <Wire.h>
+#if defined (SPARK)
 #include "Adafruit_MLX90614.h"
+#else
+#include <Wire.h>
+#include <Adafruit_MLX90614.h>
+#endif
 
 Adafruit_MLX90614 mlx = Adafruit_MLX90614();
 
