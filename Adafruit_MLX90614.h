@@ -17,10 +17,8 @@
 #ifndef Adafruit_MLX90614_h
 #define Adafruit_MLX90614_h
 
+#if defined (SPARK)
 #include "application.h"
-
-#ifdef SPARK_CORE
-// Spark - nothing to include
 #else
 #if (ARDUINO >= 100)
  #include "Arduino.h"
@@ -28,7 +26,7 @@
  #include "WProgram.h"
 #endif
 #include "Wire.h"
-#endif
+#endif //Spark
 
 #define MLX90614_I2CADDR 0x5A
 
